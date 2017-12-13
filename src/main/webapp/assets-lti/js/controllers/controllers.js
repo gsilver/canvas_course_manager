@@ -401,7 +401,6 @@ canvasSupportApp.controller('saaController', ['Course', '$scope', '$rootScope', 
   // but submitting the sis_id)
   $scope.availableSectionsGrid = [];
   _.each($rootScope.sections, function(section){
-    $log.info(section);
     if(section.sis_section_id){
       $scope.availableSectionsGrid.push({ 'name': section.name, 'id': section.sis_section_id });
     }
